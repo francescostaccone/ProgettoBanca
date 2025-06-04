@@ -31,4 +31,6 @@ def test_desposito_negativo(conto):
 
     assert conto.saldo == 100
 
-
+def test_prelievo(conto):
+    conto.prelievo(30)
+    assert conto.saldo == 70
